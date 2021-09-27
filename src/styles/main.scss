@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
+$homeButtonColor: #2b2b2b;
+$homeButtonColor2: #faff00;
+$socialIcons: #faff00;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background: #000 !important;
   overflow-x: hidden;
 }
 
+// navbar
 nav {
   padding: 15px 80px !important;
-  animation: animNav 1s ease;
   .navbar-brand {
     font-size: 25px;
     color: #fff !important;
@@ -36,6 +43,8 @@ nav {
     }
   }
 }
+
+// navbar fixed
 nav.fixed {
   padding: 15px 80px !important;
   position: fixed;
@@ -46,4 +55,64 @@ nav.fixed {
   backdrop-filter: blur(10px);
   background: #000000cf;
   box-shadow: 0 5px 15px #0c0c0cde;
+}
+
+// about
+.aboutInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 70px;
+  .side1 {
+    width: 65%;
+    margin: 20px 0;
+    .title {
+      font-size: 70px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-weight: 700;
+    }
+    .description {
+      color: #aaa;
+      margin: 15px 3px 60px;
+      width: 75%;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .buttons {
+      .linkBtn {
+        background-color: $homeButtonColor;
+        padding: 17px 40px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        &:nth-child(2) {
+          background-color: $homeButtonColor2;
+          margin-left: 10px;
+          color: #000;
+        }
+      }
+    }
+    .socialNet {
+      margin-top: 45px;
+      a {
+        padding: 0 30px 0 0;
+        .svgIcon {
+          font-size: 35px;
+          color: #fff;
+          transition: .3s ease;
+          &:hover {
+            color: $socialIcons;
+          }
+        }
+      }
+    }
+  }
+  .side2{
+    .myImage{
+      width: 95%;
+    }
+  }
 }

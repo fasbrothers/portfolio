@@ -1,3 +1,52 @@
+// homepage text animation
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+}
+
 // navbar animation
 
 @keyframes animNav {
@@ -9,4 +58,40 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+@-webkit-keyframes animNav {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes animNav {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes animNav {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animNav {
+  animation-name: animNav;
+  -webkit-animation-name: animNav;
+  -moz-animation-name: animNav;
+  -o-animation-name: animNav;
 }
