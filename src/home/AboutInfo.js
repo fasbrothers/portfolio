@@ -30,7 +30,7 @@ function AboutInfo() {
               <Link to="/" className="linkBtn">
                 About me
               </Link>
-              <Link to="/" className="linkBtn">
+              <Link to="/portfolio" className="linkBtn">
                 Portfolio
               </Link>
             </div>

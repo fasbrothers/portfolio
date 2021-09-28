@@ -2,6 +2,24 @@
 $homeButtonColor: #2b2b2b;
 $homeButtonColor2: #faff00;
 $socialIcons: #faff00;
+
+// Mixin
+
+@mixin PageTitle1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0;
+}
+@mixin PageTitle2 {
+  font-size: 30px;
+  color: $homeButtonColor2;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.7px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +71,8 @@ nav.fixed {
   z-index: 999;
   width: 100%;
   backdrop-filter: blur(10px);
-  background: #000000cf;
+  background: #fff !important;
+
   box-shadow: 0 5px 15px #0c0c0cde;
 }
 
@@ -102,7 +121,7 @@ nav.fixed {
         .svgIcon {
           font-size: 35px;
           color: #fff;
-          transition: .3s ease;
+          transition: 0.3s ease;
           &:hover {
             color: $socialIcons;
           }
@@ -110,9 +129,92 @@ nav.fixed {
       }
     }
   }
-  .side2{
-    .myImage{
+  .side2 {
+    .myImage {
       width: 95%;
     }
+  }
+}
+
+// portfolio
+.titles {
+  text-align: center;
+  margin-top: 75px;
+  .title1 {
+    @include PageTitle1();
+  }
+  .title2 {
+    @include PageTitle2();
+  }
+}
+.row {
+  .col-md-12 {
+    padding-top: 50px;
+    .projectCard {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0;
+      .projectImage {
+        width: 50%;
+      }
+      .projectInfo {
+        margin: 30px 50px;
+        .projectAbout {
+          .projectName {
+            color: #fff;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+          }
+          .projectDesc {
+            color: #aaa;
+            margin: 10px 0 50px;
+            font-family: "Montserrat", sans-serif;
+          }
+        }
+      }
+      .projectButtons {
+        .buttons {
+          background-color: #2b2b2b;
+          padding: 17px 35px;
+          color: #fff;
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          svg {
+            margin: 0 10px 0;
+          }
+          &:nth-child(2) {
+            background-color: $homeButtonColor2;
+            color: #000;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .projectCard {
+        flex-direction: row-reverse;
+        .projectInfo {
+          margin: 30px 0;
+          .projectDesc {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  padding: 20px 0 0;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  p {
+    font-size: 17px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    
   }
 }
