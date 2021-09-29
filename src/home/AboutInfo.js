@@ -15,9 +15,9 @@ function AboutInfo() {
     });
   });
   return (
-    <div className="aboutInfo">
-      {portfolios.map((portfolio) => (
-        <>
+    <div>
+      {portfolios.map((portfolio, index) => (
+        <div key={index} className="aboutInfo">
           <div className="side2">
             <img src={portfolio.image} className="myImage" alt="my-pho" />
           </div>
@@ -27,7 +27,7 @@ function AboutInfo() {
               <p className="description">{portfolio.description}</p>
             </Reveal>
             <div className="buttons">
-              <Link to="/" className="linkBtn">
+              <Link to="/about" className="linkBtn">
                 About me
               </Link>
               <Link to="/portfolio" className="linkBtn">
@@ -52,7 +52,7 @@ function AboutInfo() {
               </a>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

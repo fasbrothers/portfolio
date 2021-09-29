@@ -4,6 +4,7 @@ import HomeMain from "./home/HomeMain";
 import "./styles/main.scss";
 import "./styles/animation.scss";
 import Portfolio from "./portfolio/Portfolio";
+import About from "./about-me/About";
 
 function Routing() {
   return (
@@ -11,6 +12,7 @@ function Routing() {
       <Switch>
         <Route path="/" exact component={HomeMain} />
         <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/about" exact component={About} />
       </Switch>
     </Router>
   );
