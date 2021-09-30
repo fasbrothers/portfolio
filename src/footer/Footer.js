@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>
-    Sanjar Nigmatov 2020-{new Date().getFullYear()}. All Rights reserved ©.
+    Sanjar Nigmatov 2020-{new Date().getFullYear()}. All rights reserved ©.
       </p>
     </div>
   );
