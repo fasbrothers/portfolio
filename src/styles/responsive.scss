@@ -1,5 +1,4 @@
 // Color
-
 $togglerMenu: #faff00;
 
 // homepage
@@ -87,6 +86,35 @@ $togglerMenu: #faff00;
             }
             &:nth-child(2) {
               margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // about
+  .row {
+    .col-md-12 {
+      margin-top: 20px;
+      .aboutCard {
+        .aboutImage {
+          width: 40%;
+        }
+        .aboutInfo {
+          margin: 20px;
+          margin-right: 0;
+          padding: 20px;
+          .about {
+            .aboutBold {
+              font-size: 35px;
+            }
+            .aboutText1 {
+              font-size: 20px;
+            }
+          }
+          .aboutTech {
+            .techInfo {
+              font-size: 18px;
             }
           }
         }
@@ -181,6 +209,39 @@ $togglerMenu: #faff00;
             }
             &:nth-child(2) {
               margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // about
+  .row {
+    .col-md-12 {
+      margin-top: 20px;
+      .aboutCard {
+        .aboutImage {
+          width: 30%;
+        }
+        .aboutInfo {
+          margin: 20px;
+          margin-right: 0;
+          padding: 0;
+          .about {
+            .aboutBold {
+              font-size: 32px;
+            }
+            .aboutText1 {
+              font-size: 18px;
+            }
+          }
+          .aboutTech {
+            .techInfo {
+              font-size: 16px;
+              img {
+                width: 60px !important;
+              }
             }
           }
         }
@@ -293,6 +354,42 @@ $togglerMenu: #faff00;
       }
     }
   }
+  .row {
+    .col-md-12 {
+      margin-top: 20px;
+      .aboutCard {
+        display: inline-block;
+        text-align: center;
+        .aboutImage {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+        .aboutInfo {
+          margin: 20px;
+          .about {
+            width: 100%;
+            .aboutBold {
+              font-size: 30px;
+            }
+            .aboutText1 {
+              font-size: 16px;
+            }
+          }
+          .aboutTech {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .techInfo {
+              font-size: 16px;
+              img {
+                width: 60px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .footer {
     padding: 13px 0 0;
     p {
@@ -301,6 +398,7 @@ $togglerMenu: #faff00;
   }
 }
 @media (min-width: 320px) and (max-width: 500px) {
+  // home
   nav {
     padding: 12px !important;
     .navbar-brand {
@@ -361,6 +459,7 @@ $togglerMenu: #faff00;
       }
     }
   }
+  // portfolio
   .titles {
     margin-top: 50px;
     .title1 {
@@ -368,6 +467,7 @@ $togglerMenu: #faff00;
     }
     .title2 {
       font-size: 20px;
+      padding: 0 10px;
     }
   }
   .row {
@@ -405,6 +505,46 @@ $togglerMenu: #faff00;
       }
     }
   }
+
+  // about
+  .row {
+    .col-md-12 {
+      margin-top: 20px;
+      .aboutCard {
+        display: inline-block;
+        text-align: center;
+        .aboutImage {
+          width: 60%;
+          margin-bottom: 30px;
+        }
+        .aboutInfo {
+          text-align: left;
+          margin: 20px;
+          .about {
+            width: 100%;
+            .aboutBold {
+              font-size: 30px;
+            }
+            .aboutText1 {
+              font-size: 16px;
+            }
+          }
+          .aboutTech {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .techInfo {
+              font-size: 16px;
+              img {
+                width: 50px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // footer
   .footer {
     padding: 10px 0 0;
     p {

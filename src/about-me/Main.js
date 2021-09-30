@@ -49,7 +49,6 @@ function Main() {
               </div>
             </Col>
           ))}
-          w
         </Row>
       </Container>
     </>
