@@ -1,0 +1,222 @@
+// Color
+
+$togglerMenu: #faff00;
+
+// homepage
+@media screen and (max-width: 1200px) {
+  nav {
+    .navbar-brand {
+      font-size: 25px;
+      b {
+        font-size: 28px;
+        font-weight: 700;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        margin-left: 15px;
+        text-align: center;
+        font-size: 20px !important;
+      }
+    }
+  }
+  .aboutInfo {
+    .side2 {
+      .myImage {
+        width: 100%;
+      }
+    }
+    .side1 {
+      .title {
+        font-size: 60px;
+      }
+      .description {
+        font-size: 19px;
+      }
+      .buttons {
+        .linkBtn {
+          padding: 17px 40px;
+          font-size: 18px;
+        }
+      }
+      .socialNet {
+        a {
+          .svgIcon {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    .navbar-brand {
+      font-size: 18px !important;
+      b {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        margin-left: 15px;
+        text-align: center;
+        font-size: 17px !important;
+      }
+    }
+  }
+  .aboutInfo {
+    .side2 {
+      .myImage {
+        width: 100%;
+      }
+    }
+    .side1 {
+      width: 80%;
+      .title {
+        font-size: 40px;
+      }
+      .description {
+        font-size: 17px;
+        width: 90%;
+      }
+      .buttons {
+        .linkBtn {
+          padding: 13px 35px;
+          font-size: 18px;
+        }
+      }
+      .socialNet {
+        a {
+          width: 100%;
+          padding: 0 30px 0 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 18px !important;
+    .navbar-brand {
+      font-size: 22px !important;
+      padding: 0 10px;
+      b {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+    .navbar-toggler {
+      background: $togglerMenu;
+      border-radius: 0;
+      span {
+        font-size: 15px;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        margin: 20px 0 !important;
+        text-align: center;
+        font-size: 20px !important;
+      }
+    }
+  }
+  .aboutInfo {
+    display: inline-block;
+    padding: 0;
+    .side2 {
+      text-align: center;
+      margin-top: 35px;
+      .myImage {
+        width: 40%;
+      }
+    }
+    .side1 {
+      text-align: center;
+      width: 100%;
+      .title {
+        font-size: 27px;
+      }
+      .description {
+        font-size: 15px;
+        width: 100%;
+        padding: 0 70px;
+      }
+      .buttons {
+        .linkBtn {
+          padding: 15px 30px;
+          font-size: 15px;
+        }
+      }
+      .socialNet {
+        a {
+          width: 100%;
+          padding: 0 10px 0 10px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  nav {
+    padding: 12px !important;
+    .navbar-brand {
+      font-size: 18px !important;
+      padding: 0 10px;
+      b {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .navbar-toggler {
+      background: $togglerMenu;
+      border-radius: 0;
+      span {
+        font-size: 15px;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        margin: 20px 0 !important;
+        text-align: center;
+        font-size: 17px !important;
+      }
+    }
+  }
+  .aboutInfo {
+    display: inline;
+    padding: 0;
+    .side2 {
+      text-align: center;
+      margin-top: 35px;
+      .myImage {
+        width: 50%;
+      }
+    }
+    .side1 {
+      text-align: center;
+      width: 100%;
+      .title {
+        font-size: 27px;
+      }
+      .description {
+        font-size: 15px;
+        width: 100%;
+        padding: 0 15px;
+      }
+      .buttons {
+        .linkBtn {
+          padding: 10px;
+          font-size: 15px;
+        }
+      }
+      .socialNet {
+        a {
+          width: 100%;
+          padding: 0 10px 0 10px;
+        }
+      }
+    }
+  }
+}
