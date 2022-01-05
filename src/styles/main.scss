@@ -235,6 +235,28 @@ nav.fixed {
         }
       }
     }
+    &:nth-child(8) {
+      .projectCard {
+        flex-direction: row-reverse;
+        .projectInfo {
+          margin: 30px 0;
+          .projectDesc {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:nth-child(10) {
+      .projectCard {
+        flex-direction: row-reverse;
+        .projectInfo {
+          margin: 30px 0;
+          .projectDesc {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
